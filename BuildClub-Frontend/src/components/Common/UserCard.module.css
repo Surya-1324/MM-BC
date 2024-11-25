@@ -1,0 +1,107 @@
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: -17vw; /* Adjust this value to keep the tooltip on the left side of the card */
+  transform: translateY(-50%);
+  opacity: 0;
+  background-color: #ffffff;
+  color: #0069bd;
+  padding: 0.8vw;
+  border: 0.07vw solid #0069bd;
+  border-radius: 0.55vw;
+  white-space: nowrap;
+  font-family: 'Poppins';
+  font-size: 0.83vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 16vw;
+  height: 4vh;
+  min-width: 15vw;
+  max-width: 30vw;
+  min-height: 3vh;
+  max-height: 10vh;
+  transition: opacity 0.3s ease; /* Smooth transition for appearance */
+  pointer-events: none; /* Prevent tooltip from being interactive */
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  background-color: #e4f4fc;
+  padding: 0.7vh 1.1vw;
+  border-radius: 0.83vw;
+  box-shadow: 0 0.19vh 0.29vh rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.userCard:hover {
+  box-shadow: 0 0.39vh 0.58vh rgba(0, 0, 0, 0.2);
+}
+
+.userCard:hover .tooltip {
+  opacity: 1;
+}
+
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.avatar {
+  width: 3vw; /* Responsive avatar width */
+  height: 5vh; /* Responsive avatar height */
+  /* border-radius: 50%; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container while maintaining aspect ratio */
+}
+
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 1.1vw;
+}
+
+.userName {
+  font-size: 0.90vw;
+  font-weight: bold;
+}
+
+.userEmail {
+  font-size: 0.80vw;
+  font-weight: 400;
+  color: #686868;
+}
+
+.powerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8vw !important;
+  height: 3.4vh !important;
+  border-radius: 0.35vw;
+  background-color: white;
+  box-shadow: 0 0.19vh 0.48vh rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  /* transition: transform 0.3s ease; */
+}
+
+.powerButton img {
+  width: 1vw;
+  height: 1vh;
+}

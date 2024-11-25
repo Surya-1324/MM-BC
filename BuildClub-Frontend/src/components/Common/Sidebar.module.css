@@ -1,0 +1,96 @@
+/* src/components/Common/Sidebar.module.css */
+
+.sidebar {
+  width: 18.056vw; /* Width in viewport width units */
+  height: 100vh;   /* Height in viewport height units */
+  min-width: 168px; /* Minimum width in pixels */
+  max-width: 314.6px; /* Maximum width in pixels */
+  min-height: 768px; /* Minimum height in viewport height units */
+  max-height: 1280px; /* Maximum height in viewport height units */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0; /* Padding in viewport width units */
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2vw 0; */ /* Padding in viewport width units */
+}
+
+.logo {
+  width: 9.722vw; /* Width in percentage (relative to parent) */
+  min-width: 99.5px;
+}
+
+.sidebarMenu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Width in percentage (relative to parent) */
+}
+
+.sidebarMenuItem {
+  width: 100%; /* Width in percentage (relative to parent) */
+  /* margin-bottom: 1vw; */ /* Margin in viewport width units */
+}
+
+.sidebarMenuLink {
+  text-decoration: none;
+  color: #222222;
+  font-weight: 500;
+  font-size: clamp(11.37px, 1.111vw, 20.62px); /* Font size in viewport width units */
+  display: flex;
+  width: 18.10vw;
+  height: 6vh;
+  align-items: center;
+  padding: 1.5vw 2.5vw; /* Padding in viewport width units */
+  border-radius: 0.5vw; /* Border radius in viewport width units */
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  color: #0069bd;
+  background-color: #f0f7fd;
+  background-image: url('../../assets/images/icons/leftBlue.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(11.37px, 1.111vw, 20.62px); /* Font size in viewport width units */
+  display: flex;
+  align-items: center;
+  padding: 1.5vw 2.5vw; /* Padding in viewport width units */
+  /* border-radius: 0.5vw; */ /* Border radius in viewport width units */
+  transition: background-color 0.3s ease;
+  width: 18.10vw;
+  height: 6vh;
+  min-width: 169.4px;
+  max-width: 314.6px;
+  min-height: 45px;
+  max-height: 75px;
+}
+
+.activeLink {
+  background-color: #ffffff; /* White background */
+  /* Add any other styles for active link here */
+  border-left: 0.28vw solid blue; /* Border width in viewport width units */
+}
+
+.icon {
+  width: 1.6vw; /* Width in viewport width units */
+  height: 1.6vw; /* Height in viewport width units */
+  margin-right: 1vw; /* Margin in viewport width units */
+  stroke: currentColor;
+}
+
+.css-14sza3e-MuiStepLabel-root {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  padding: 0.8vh 0; /* Padding in viewport height units */
+}

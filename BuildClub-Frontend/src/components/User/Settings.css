@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.settings-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #707070;
+}
+
+.tab.active {
+  border-bottom: 2px solid #0069bd;
+  font-weight: bold;
+  color: #0069bd;
+}
+
+.profile-settings, .security-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 20px;
+  height: 500px;
+}
+
+.settings-h {
+  color: #0069bd;
+  font-size: clamp(9.95px, 0.972vw, 18.05px);
+}
+
+.profile-pic {
+  position: relative;
+}
+
+.profile-pic img {
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50%;
+}
+
+.form {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  color: #777777;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Align buttons to the end */
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.button-group-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+  height: 48px; /* Fixed height to ensure consistent placement */
+}
+
+.edit-button {
+  color: #0069bd ;
+  border-radius: 32px !important;
+  text-transform: none !important;
+  font-family: "Poppins" !important;
+  background-color: #0069BD !important;
+ /* box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important; */ 
+}
+
+
+.edit-button:disabled, .submit-button:disabled {
+  background: #75b7ea !important;
+  color: white !important;
+  cursor: not-allowed !important;
+}
+
+.submit-button {
+  color: #0069bd;
+  border-radius: 32px !important;
+  text-transform: none !important;
+  font-family: "Poppins" !important;
+  background-color: #0069BD !important;
+}
+
+.profile-pic {
+  position: relative;
+  display: inline-block; /* Ensures the container only takes the space it needs */
+}
+
+.upload_button {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  max-width: 20px;
+}
+
+.edit-icon {
+  cursor: pointer;
+  font-size: clamp(12.79px, 1.25vw, 23.2px);
+}
+
+.edit-icon1 {
+  cursor: pointer;
+  font-size: clamp(8.53px, 0.833vw, 15.468px);
+}
+
+.settingsinput input {
+  padding: 10px !important;
+  font-family: "Poppins" !important;
+  font-size: clamp(9.95px, 0.972vw, 18.05px) !important;
+}
+
+.settingsinput label {
+  top: -7px !important;
+  font-family: "Poppins" !important;
+  font-size: clamp(9.95px, 0.972vw, 18.05px) !important;
+}
+
+.password-visibility-icon .MuiSvgIcon-root {
+  color: #0069bd;
+  font-size: clamp(14.22px, 1.389vw, 25.78px);
+}
+
+#uniqueButtonId {
+  background-color: #0069BD;
+  color: white;
+  text-transform: none;
+  font-family: 'poppins';
+
+}
+

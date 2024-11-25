@@ -1,0 +1,485 @@
+.CSmartTable {
+  font-size: 0.97vw; /* Font size based on viewport width */
+  position: relative;
+}
+
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Add User Modal */
+
+.add-user-modal {
+  animation: slideInFromRight 0.5s ease-out forwards;
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: Poppins, sans-serif;
+}
+
+.closeButton {
+  display: grid;
+  justify-content: flex-start;
+  text-align: left;
+  border-bottom: none;
+  padding-bottom: 0px;
+  
+}
+
+.modal-dialog {
+  width: 34.72vw; /* Converted from 500px */
+  margin: 0;
+  min-width: 20vw;
+  max-width: 60vw;
+}
+
+/* .custom-close-button .btn-close {
+  height: 2vh;
+  width: 5vw;
+} */
+
+
+.modal-content {
+  background-color: #f0f7fd;
+  color: #0069bd;
+  width: 34.72vw; /* Converted from 500px */
+  font-family: Poppins, sans-serif;
+  min-width: 20vw;
+  max-width: 60vw;
+}
+
+
+.add-user-modal.c-show {
+  transform: translateX(0);
+}
+
+.add-user-modal .edit-button {
+  position: absolute;
+  right: 1.04vw; /* Converted from 15px */
+  height: 2.44vh; /* Converted from 25px */
+  width: 4.79vw; /* Converted from 69px */
+  font-size: 0.83vw; /* Converted from 12px */
+  line-height: 0;
+  background-color: #0069BD;
+}
+
+/* Center the modal */
+/* Full-screen centering of the modal */
+.modal-center .modal-dialog {
+  position: fixed; /* Fix the position to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%) !important; /* Offset to center exactly */
+  margin: 0; /* Remove margin */
+  max-width: 90vw;
+  max-height: 90vh; /* Ensure modal doesn't exceed viewport height */
+}
+
+/* Animation for sliding in from the center */
+@keyframes slideInFromCenter {
+  from {
+      opacity: 0;
+      transform: scale(0.8); /* Slightly smaller at start */
+  }
+  to {
+      opacity: 1;
+      transform: scale(1); /* End at full size */
+  }
+}
+
+/* Apply the animation */
+/* .modal-center .modal-content {
+  animation: slideInFromCenter 0.5s ease-out;
+} */
+
+/* Optional: Add some basic styling to modal content */
+.modal-center .modal-content {
+  animation: slideInFromCenter 0.5s ease-out;
+  border-radius: 0.35vw; /* Converted from 0.5rem */
+  box-shadow: 0 2.93vh 9.77vh rgba(0, 0, 0, 0.2); /* Converted from 0.5rem and 1rem */
+  font-family: Poppins, sans-serif;
+}
+
+/* Remove default borders to keep the modal design clean */
+.modal-center .modal-header,
+.modal-center .modal-footer {
+  border: none;
+  font-family: Poppins, sans-serif;
+}
+
+.borderless-input {
+  border: none;
+  background: none;
+  width: 100%;
+}
+
+.borderless-input:focus {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.profile-pic {
+  text-align: center;
+}
+
+form > div {
+  margin: 0.69vh; /* Converted from 10px */
+}
+
+
+.add-this-class {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 0.07vw solid #B4B4B4 !important; /* Converted from 1px */
+  border-radius: 0.55vw !important; /* Converted from 8px */
+  
+}
+
+.add-this-class tbody {
+  border-bottom: 0.02vw solid #b4b4b4; /* Converted from 0.5px */
+  border-radius: 0.35vw; /* Converted from 8px */
+}
+.add-this-class tbody tr:last-child td {
+  border-bottom: none;
+  border-bottom-left-radius: 0.55vw;
+  border-bottom-right-radius: 0.55vw;
+}
+
+.add-this-class tbody tr {
+  background-color: #FFFFFF !important;
+  height: 4.88vh; /* Converted from 50px */
+}
+
+
+.add-this-class th {
+  background-color: #F0F7FD;
+  color: #0069BD;
+  font-weight: 600;
+  
+  border-bottom: 0.03vw solid #B4B4B4; 
+}
+.add-this-class th:first-child {
+  border-top-left-radius:0.55vw; 
+}
+
+.add-this-class th:last-child {
+  border-top-right-radius: 0.55vw; 
+}
+.add-this-class td {
+  color: #495749;
+  
+}
+
+.add-this-class .custom-row {
+  background-color: #e9ecef;
+  
+}
+
+.add-this-class .custom-cell {
+  background-color: #f1f3f5;
+  color: #212529;
+}
+
+.add-this-class .custom-dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: white;
+  background-image: url(../../assets//images//icons/deleteIcon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2.34vh; 
+}
+
+.custom-dropdown-toggle::after {
+  display: none;
+}
+
+.form-check-input {
+  height: 1.46vh; /* Converted from 15px */
+  width: 1.46vh; /* Converted from 15px */
+  border: 0.07vw #A8A8A8 solid; /* Converted from 1px */
+}
+
+.add-this-class .dropdown-menu {
+  --cui-dropdown-min-width: 9.72vw; /* Converted from 140px */
+  height: 12vh; /* Converted from 112px */
+  padding: 0.19vw; /* Converted from 2px */
+  box-shadow: 0 0.49vh 1.95vh rgba(0, 0, 0, 0.1); /* Converted from 0px 5px 20px */
+}
+
+.dropdown-item:active {
+  background-color: transparent !important;
+}
+
+.add-this-class .dropdown-menu.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add-this-class .dropdown-menu li {
+  width: 8.47vw; /* Converted from 122px */
+  height: 3.2vh; /* Converted from 27px */
+  border-radius: 0.49vw; /* Converted from 5px */
+  font-size: 1.3vh; /* Converted from 10px */
+  font-family: poppins, sans-serif;
+}
+
+.add-this-class .dropdown-menu li a {
+  height: 100%;
+  line-height: 1.75vh; /* Converted from 18px */
+  padding: 0.58vh 0.58vh; /* Converted from 6px 6px */
+}
+
+.add-this-class .dropdown-menu li:first-child {
+  background: rgba(0, 105, 189, 0.05);
+}
+
+.add-this-class .dropdown-menu li:first-child a {
+  color: #0069BD;
+}
+
+.add-this-class .dropdown-menu li:nth-child(2) {
+  background: rgba(0, 105, 189, 0.05);
+}
+
+.add-this-class .dropdown-menu li:nth-child(2) a {
+  color: #0069BD;
+}
+
+.add-this-class .dropdown-menu li:last-child {
+  background: rgba(231, 29, 54, 0.05);
+}
+
+.add-this-class .dropdown-menu li:last-child a {
+  color: #E71D36;
+}
+
+.buttonsATable {
+  background-color: #0069BD;
+  font-size: 1.37vh; /* Converted from 14px */
+  border-radius: 0.97vh; /* Converted from 10px */
+}
+
+/* The color while focusing input or checkbox */
+.form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.24vw #def9d6; /* Converted from 0 0 0 .25rem */
+  border-color: #d6eaf9;
+}
+
+/* VehicleLogTable.css */
+.CSmartTable .Create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.search {
+  width: 20vw; /* Converted from 226px */
+  height: 4vh; /* Converted from 40px */
+  /* max-width: 17.36vw; Converted from 250px */
+  min-width: 10vw;     /* Minimum width for responsiveness */
+  max-width: 25vw;     /* Maximum width to control resizing on larger screens */
+  min-height: 2.5vh;   /* Ensuring height adjusts responsively */
+  max-height: 5vh;     /* Setting a reasonable maximum height */
+}
+
+
+.search-input::placeholder {
+  font-size: 1.6vh !important; /* Converted from 12px */
+  align-items: center !important;
+ 
+  color: #777777 !important; /* Optional: Change the color of the placeholder text */
+}
+
+
+.create-vehicle-button-container {
+  border-radius: 2.22vw; /* Converted from 32px */
+  font-size: 0.97vw; /* Converted from 14px */
+  width: 18vw; /* Converted from 226px */
+  height: 4.8vh; /* Converted from 40px */
+  margin-top: 0.390625vh;
+  background-color: #0069BD;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.create-vehicle-button-container:hover, 
+.create-vehicle-button-container:active {
+   color: #ffffff !important;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, 
+               box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, 
+               border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, 
+               color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important; 
+   background-color: #0075d2 !important;
+   /* box-shadow: 0 0.20vh 0.20vh #0075d2;  */
+}
+
+.button-icon {
+  margin-right: 0.56vw; /* Converted from 8px */
+}
+
+.dropdown-item, img {
+  padding-right: 0.28vw; /* Converted from 4px */
+}
+
+
+.create-vehicle-modal .modal-dialog {
+  width: 45.97vw; /* Converted from 662px */
+  height: 39.06vh; /* Converted from 400px */
+  min-width: 16vw;
+  max-width: 60vw;
+  min-height: 16vh;
+  max-height: 60vh;
+}
+
+
+.create-vehicle-modal .modal-content {
+  border-radius: 1.17vw; /* Converted from 12px */
+  font-family: Poppins, sans-serif;
+}
+
+.createvehinput{
+  font-size: 1vw;
+}
+
+.createvehinputdes {
+  height: 14.65vh; /* Converted from 150px */
+  font-size: 1vw;
+}
+
+.cmodalfooter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1%;
+  margin: 1.95vh 0.14vw 0 0.35vw;
+  flex-wrap: nowrap;
+  /* top right bottom left*/
+}
+
+.modal-footer-buttons {
+  width: 14.93vw; /* Converted from 215px */
+  height: 4.4vh; /* Converted from 40px */
+  border-radius: 0.55vw; /* Converted from 8px */
+  font-size: 1vw; /* Converted from 16px */
+  
+}
+
+#close {
+  background-color: white;
+  color: #0069BD;
+  border-color: #0069BD;
+  height: 4.7vh;
+  font-size: 1vw;
+  /* position: static; */
+}
+
+#submit {
+  background-color: #0069BD;
+  color: white;
+  height: 4.7vh;
+  font-size: 1vw;
+  /* position: static; */
+}
+
+.modal-footer-common-buttons {
+  display: flex;
+  gap: 1.5%;
+}
+
+/* Change modal background color to white */
+.modal-content {
+  background-color: white !important;
+  font-family: Poppins, sans-serif;
+}
+
+/* Modal header text color */
+.modal-center .modal-header .modal-title {
+  color: black; /* Set header text color to black */
+  font-family: Poppins, sans-serif;
+  font-size: 1.4vw;
+}
+
+/* Modal body text color */
+.modal-center .modal-body {
+  color: black; /* Set body text color to black */
+  font-family: Poppins, sans-serif;
+  font-size: 1vw;
+  margin-top: -1.6vw;
+}
+.mandatory {
+  color: red;
+}
+
+.pagination {
+  --cui-pagination-padding-x: 0.75rem;
+  --cui-pagination-padding-y: 0.375rem;
+  --cui-pagination-font-size: 1rem;
+  --cui-pagination-color: #0069bd;
+  --cui-pagination-bg: var(--cui-body-bg);
+  --cui-pagination-border-width: var(--cui-border-width);
+  --cui-pagination-border-color: var(--cui-border-color);
+  --cui-pagination-border-radius: var(--cui-border-radius);
+  --cui-pagination-hover-color: #0069bd;
+  --cui-pagination-hover-bg: var(--cui-tertiary-bg);
+  --cui-pagination-hover-border-color: var(--cui-border-color);
+  --cui-pagination-focus-color: #0069bd;
+  --cui-pagination-focus-bg: var(--cui-secondary-bg);
+  --cui-pagination-focus-box-shadow: 0 0 0 0.25rem #0069bd;
+  --cui-pagination-active-color: #ffffff;
+  --cui-pagination-active-bg: #0069bd;
+  --cui-pagination-active-border-color: #0069bd;
+  --cui-pagination-disabled-color: #0069bd;
+  --cui-pagination-disabled-bg: #d6eaf9;
+  --cui-pagination-disabled-border-color: var(--cui-border-color);
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* .active>.page-link, .page-link.active {
+  z-index: 3;
+  color: var(--cui-pagination-active-color);
+  background-color: var(--cui-pagination-active-bg);
+  border-color: var(--cui-pagination-active-border-color);
+} */
+
+.form-select:focus {
+  border-color: #D6EAF9 !important;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(214, 234, 249, 1);
+}
+
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  background-color: #d6eaf9;
+  border-color: #d6eaf9;
+}
+
+
+.form-control:focus {
+  color: var(--cui-body-color);
+  background-color: var(--cui-body-bg);
+  border-color: #D6EAF9 !important;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem #d6eaf9
+}

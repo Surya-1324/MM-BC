@@ -1,0 +1,17 @@
+.appContainer {
+  display: flex;
+  height: 100vh; /* Ensures the app takes the full height of the viewport */
+  margin: 0;
+  background-color: #d6eaf9;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 0.97vh 1.67vw; /* 10px 24px */
+  overflow: auto; /* Enables scrolling for content */
+  background-color: #ffffff;
+  margin: 1.56vh; /* 16px */
+  margin-left: 0;
+  border-radius: 2.34vh; /* 24px */
+  width: 81vw;
+}

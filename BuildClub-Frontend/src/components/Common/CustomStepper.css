@@ -1,0 +1,18 @@
+.css-1hv8oq8-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+  margin-top: calc(12px * 0.0694vw) !important;
+  margin-bottom: calc(16px * 0.0694vw) !important;
+}
+
+.stepLabel {
+  color: #0069BD;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.stepLabel.active {
+  transform: scale(1.1);
+}
+.MuiStepLabel-label {
+  color: #0069BD !important;
+  font-family: "poppins" !important;
+  font-weight: 500 !important;
+}

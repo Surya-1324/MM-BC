@@ -1,0 +1,30 @@
+.slider-content {
+    padding: 16px;
+}
+
+.slider-content h3 {
+    margin-bottom: 16px;
+}
+
+.slider-content p {
+    margin-bottom: 16px;
+}
+
+#slider-table {
+    border: 1px solid #b4b4b4;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px !important;
+}
+
+#slider-table th,
+#slider-table td {
+    border: 1px solid #b4b4b4;
+    padding: 8px;
+
+}
+
+#slider-table th{
+    color: #0069bd;
+    background-color: #F0F7FD;
+}

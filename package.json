@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

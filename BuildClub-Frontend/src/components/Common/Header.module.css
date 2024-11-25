@@ -1,0 +1,34 @@
+/* TitleBar.module.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 90px; */
+    padding: 10px 0px;
+    /* background-color: #f0f0f0; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+  }
+  
+  .pageTitle {
+    font-size: 18px;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+  
+  .userDetails {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+  }
+  
+  .userDetails span {
+    margin-left: 10px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #333;
+  }
+  
