@@ -62,9 +62,7 @@ const Feedback = () => {
       console.error('Error submitting feedback:', error);
       setErrorMessage('Failed to submit feedback. Please try again.');
     }
-    // finally {
-    //   setLoading(false); 
-    // }
+   
   };
 
   const handleSubmit = (e) => {
